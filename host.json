@@ -1,0 +1,23 @@
+{
+  "version": "2.0",
+  "configurationProfile": "mcp-custom-handler",
+  "customHandler": {
+    "description": {
+      "defaultExecutablePath": "python",
+      "arguments": [
+        "-m",
+        "mcp_panther",
+        "--transport",
+        "streamable-http",
+        "--host",
+        "0.0.0.0",
+        "--port",
+        "3000"
+      ]
+    },
+    "http": {
+      "DefaultAuthorizationLevel": "anonymous"
+    },
+    "port": "3000"
+  }
+}
